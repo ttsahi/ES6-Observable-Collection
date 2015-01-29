@@ -16,7 +16,7 @@ gulp.task('compile', function(){
 });
 
 gulp.task('build', function() {
-    return gulp.src('src/*.js')
+    return gulp.src('src/**/*.js')
         .pipe(sourcemaps.init())
         .pipe(traceur({experimental: true, blockBinding: true, arrayComprehension: true}))
         .pipe(concat('es6-observable-collection.js'))
@@ -25,7 +25,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('dist', function () {
-    return gulp.src('src/*.js')
+    return gulp.src('src/**/*.js')
         .pipe(traceur({experimental: true, blockBinding: true, arrayComprehension: true}))
         .pipe(concat('es6-observable-collection.min.js'))
         .pipe(ngAnnotate())
