@@ -1,0 +1,25 @@
+{
+  "name": "es6-obserable-collection",
+  "version": "0.0.0",
+  "authors": [
+    "Tsahi <t.tsahi@gmail.com>"
+  ],
+  "description": "ES6 observable collection.",
+  "main": "/dist/es6-observable-collection.js",
+  "keywords": [
+    "es6",
+    "obserable",
+    "collection"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.11"
+  }
+}
